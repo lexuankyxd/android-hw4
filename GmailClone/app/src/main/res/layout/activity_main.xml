@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="10">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:weightSum="10"
+            android:background="#ff0000"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/button"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:background="@drawable/baseline_menu_24"
+                android:text="" />
+            <TextView
+                android:textColor="@color/white"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:textSize="50sp"
+                android:paddingHorizontal="20dp"
+                android:layout_weight="6"
+                android:text="@string/inbox"/>
+            <Button
+                android:id="@+id/button1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:background="@drawable/baseline_search_24"
+                android:text="" />
+        </LinearLayout>
+        <ListView
+            android:id="@+id/list_view"
+            android:layout_width="match_parent"
+            tools:listitem="@layout/demo"
+            android:layout_height="0dp"
+            android:layout_weight="9">
+
+        </ListView>
+    </LinearLayout>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="16dp"
+        android:backgroundTint="#ff0000"
+        android:contentDescription="hi"
+        android:src="@drawable/baseline_edit_24" />
+</RelativeLayout>

@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Gmail Clone</string>
+    <string name="inbox">Inbox</string>
+</resources>
